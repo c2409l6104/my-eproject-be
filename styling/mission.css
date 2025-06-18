@@ -1,0 +1,8 @@
+#mission{
+
+    max-width: 1700px; /* Optional: limits the width of the carousel */
+    margin: 2rem auto;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}

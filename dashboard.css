@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 3000px;; 
+  background-color: #ffffff
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ /* #Home {
+
+ } */
+/*@media (max-width: 480px) {
+  #Home{
+    background-color: rgb(119, 241, 119);
+    
+  }
+  
+} */
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0.7rem;
+  overflow:hidden;
+  display: flex;
+  gap: 8rem;
+}
+li {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  font-family: sans-serif;
+  transition: transform 0.3s ease-in-out;
+
+}
+a {
+  text-decoration: none; 
+  color: inherit
+}
+
+nav {
+  width: 100%;
+  max-width: 100vw; /* Optional: prevents overflow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Or use flex:1 method */
+  padding: 15px 5vw;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.logo{
+  max-width: 3rem; /* Or whatever fits well */
+  height: auto;
+}
+ul li:hover{
+  transform: scale(1.2);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  /* width: 35%; */
+  /* width removed to allow content-based sizing */
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.search-icon {
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-icon {
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+}
+.user-icon {
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+}
+.heart-icon {
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+}
+.icon-container{
+  display:flex;
+  align-items:center;
+  gap:30px;
+
+}
+.icon-container i {
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.icon-container i:hover {
+  transform: scale(1.2);
+}
+.home-image{
+  width:30%;;
+}
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home-container{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  background: #DDF6D2;
+  background: linear-gradient(74deg, rgba(221, 246, 210, 1) 0%, rgba(176, 219, 156, 1) 99%);
+  
+  height: 90vh;
+  
+
+}
+#home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem;
+  width: 60%;
+  height: auto;
+  color:white;
+  
+}
+#home-text h1{
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5rem;
+  
+}
+#home-text p {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+#shop-button{
+  padding: 8px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor:pointer;
+  transition: all .2s ease-in-out;
+  background-color: rgba(255, 255, 255,);
+  color:rgb(0, 0, 0);
+  border-radius:50px;
+  border: none;
+  height: 5rem;
+  width: 12rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+#shop-button:hover{
+  transform: scale(1.1);
+}
+#shop-button-container{
+  display:flex;
+  justify-content:center;
+
+}
+
+#Home-section-info{
+  display: flex;
+  justify-content: center;
+  margin: 20rem auto;
+  width: 90vw;
+}
+.carousel-container{
+  width: 100%;
+  max-width: 1700px; /* Optional: limits the width of the carousel */
+  margin: 2rem auto;
+
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 1rem 0;
+  padding: 10px;
+}
+
+.carousel-item {
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 items with 2 gaps */
+  scroll-snap-align: start;
+  min-width: 0; /* Ensures flex doesn't stretch it weirdly */
+  border: solid 1px #1f1f1f;
+  border-radius: 1rem;
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  bottom: 15px;
+  width: 100%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(170, 165, 165, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: black;
+}
+.collection-container1{
+   padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.collection-container2{
+  padding-top: 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-self: center;
+}
+
+#footer{
+  background-color: #1f1f1f;
+  color: white;
+  width: 100vw;
+}
+.footer-container{
+  padding: 1rem;
+  display:flex;
+  justify-content: center;
+}
+.footer-socials{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-socials i {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.footer-socials i:hover {
+  transform: scale(1.2);
+}
+#footer-logo-container{
+  padding-right: 1rem;
+}
+
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  color: #333;
+}

@@ -1,0 +1,63 @@
+#about{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .about-text {
+    display: flex;
+    margin: 0 5rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    max-width: 1000px; /* Optional: limits the width of the text container */
+  }
+  .about-text h1 {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #000000;
+  }
+  .about-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #000000;
+
+  }
+    .about-container img{
+    width: 40vw;
+    height: auto;
+    border-radius: 10px;
+  }
+  #discover-button{
+    display: block;
+    margin: 0 auto 0 0; /* Moves button to the left */
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+    background-color: rgb(43, 236, 156);
+    color:rgb(0, 0, 0);
+    border-radius:50px;
+    border: none;
+    height: 5rem;
+  }
+  #discover-button:hover{
+    transform: scale(1.1);
+  }
