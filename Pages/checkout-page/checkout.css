@@ -1,0 +1,139 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #a0f0d0;
+  color: #000000;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  margin-top: 30px;
+  border-radius: 12px 12px 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #1d231c;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+  display: flex;
+  gap: 40px;
+}
+
+.form-section,
+.summary-section {
+  flex: 1;
+}
+
+h2 {
+  border-bottom: 2px solid #81e6d9;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  color: #81e6d9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #1d231c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table,
+th,
+td {
+  border: 1px solid #81e6d9;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: #f0fdfc;
+  color: #000;
+  transition: box-shadow 0.3s ease;
+  resize: none;
+  box-sizing: border-box; 
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #81e6d9;
+}
+
+button {
+  background-color: #81e6d9;
+  color: #000;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #5dd6c7;
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: #4cc1b5;
+}
+
+#bank-options {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #81e6d9;
+}

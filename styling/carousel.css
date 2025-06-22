@@ -1,60 +1,99 @@
-.carousel-container{
-    width: 100%;
-    max-width: 1700px; /* Optional: limits the width of the carousel */
-    margin: 2rem auto;
-  
-  }
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 1rem 0;
-    padding: 10px;
-    border-radius: 1rem;
-  }
-  
+/* Container to center and constrain width */
+.carousel-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: rem; /* Optional: small side padding on small screens */
+}
+
+/* Carousel track */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 1rem;
+  width: 100%;
+
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Carousel items */
+.carousel-item {
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 items with 2 gaps */
+  scroll-snap-align: start;
+  border: 1px solid #1f1f1f;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Dot navigation */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(170, 165, 165, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+/* Section container */
+.collection-container1,
+.collection-container2 {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection-container1 h1,
+.collection-container2 h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
   .carousel-item {
-    flex: 0 0 calc((100% - 40px) / 3); /* 3 items with 2 gaps */
-    scroll-snap-align: start;
-    min-width: 0; /* Ensures flex doesn't stretch it weirdly */
-    border: solid 1px #1f1f1f;
-    border-radius: 1rem;
+    flex: 0 0 100%; /* 1 item per view */
   }
-  .carousel::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
+
+  .carousel {
+    gap: 30px;
+    padding: 0.5rem 1px;
   }
-  .dots-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    bottom: 15px;
-    width: 100%;
-  }
-  
-  .dot {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(170, 165, 165, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
+
+  .dot,
   .dot.active {
-    background-color: black;
+    width: 10px;
+    height: 10px;
   }
-  .collection-container1{
-     padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
+
+  .carousel-container {
+    padding: 0 0.5rem; /* Slight inner margin for small screens */
   }
-  .collection-container2{
-    padding-top: 2rem;
-   display: flex;
-   flex-direction: column;
-   justify-self: center;
-  }
-  
+}

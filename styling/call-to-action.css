@@ -1,0 +1,103 @@
+#call-to-action {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 1rem;
+    margin: 5rem auto;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: space-between; /* Aligns items in the row */
+}
+
+.text-container {
+    text-align: left;
+    width: 100%;
+    display: flex;
+ /* Ensures content starts from the left */
+}
+#call-to-action h1 {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #ffffff;
+}
+#call-to-action button{
+    margin: 0 auto 0 0; /* Moves button to the left */
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+    background-color: rgb(43, 236, 156);
+    color:rgb(0, 0, 0);
+    border-radius:50px;
+    border: none;
+    height: 5rem;
+    justify-content: center;
+    width: 12rem;
+    transition: ease-in-out 0.3s;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#call-to-action button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design for #call-to-action */
+@media (max-width: 1024px) {
+    #call-to-action {
+        margin: 5rem auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25);
+        align-items: center; /* Centers items in the column */
+        width: 90%;
+
+
+    }
+
+    .text-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #call-to-action h1 {
+        font-size: 2.5rem;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    #call-to-action button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #call-to-action {
+        padding: 2rem 1rem;
+    }
+
+    #call-to-action h1 {
+        font-size: 2rem;
+    }
+
+    #call-to-action button {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        height: 4rem;
+    }
+}

@@ -1,0 +1,60 @@
+.carousel-container{
+    width: 100%;
+    max-width: 1700px; /* Optional: limits the width of the carousel */
+    margin: 2rem auto;
+  
+  }
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 1rem 0;
+    padding: 10px;
+    border-radius: 1rem;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc((100% - 40px) / 3); /* 3 items with 2 gaps */
+    scroll-snap-align: start;
+    min-width: 0; /* Ensures flex doesn't stretch it weirdly */
+    border: solid 1px #1f1f1f;
+    border-radius: 1rem;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    bottom: 15px;
+    width: 100%;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(170, 165, 165, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+  .collection-container1{
+     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .collection-container2{
+    padding-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-self: center;
+  }
+  
